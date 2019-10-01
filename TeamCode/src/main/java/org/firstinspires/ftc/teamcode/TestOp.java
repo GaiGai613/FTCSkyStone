@@ -12,4 +12,12 @@ public class TestOp extends Main
 	{
 
 	}
+
+	@Override
+	public void loop()
+	{
+		super.loop();
+
+
+	}
 }
