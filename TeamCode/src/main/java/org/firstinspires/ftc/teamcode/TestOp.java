@@ -10,6 +10,6 @@ public class TestOp extends Main
 	@Override
 	public void addBehaviors(List<Behavior> behaviorList)
 	{
-
+		behaviorList.add(new OhDrive(this));
 	}
 }
