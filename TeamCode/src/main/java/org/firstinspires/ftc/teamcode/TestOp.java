@@ -8,26 +8,13 @@ import java.util.List;
 import FTCEngine.Core.Behavior;
 import FTCEngine.Core.Main;
 
-@TeleOp(name = "SOMETHING THAT SHOULD")
-public class TestOp extends LinearOpMode
+//@TeleOp(name = "TestEngine")
+public class TestOp extends Main
 {
-//	@Override
-//	public void addBehaviors(List<Behavior> behaviorList)
-//	{
-////		behaviorList.add(new OhDrive(this));
-////		behaviorList.add(new TestBehavior(this));
-//	}
-
-
 	@Override
-	public void runOpMode() throws InterruptedException
+	public void addBehaviors(List<Behavior> behaviorList)
 	{
-		waitForStart();
-
-		while (opModeIsActive())
-		{
-			telemetry.addData("HA", "LOL");
-			telemetry.update();
-		}
+		behaviorList.add(new OhDrive(this));
+		behaviorList.add(new TestBehavior(this));
 	}
 }

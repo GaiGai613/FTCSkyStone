@@ -42,6 +42,8 @@ public class TestBehavior extends Behavior
 
 		telemetry.addData("DELTA TIME!", time.getDeltaTime());
 		telemetry.addData("TOTAL TIME!", time.getTime());
+
+		System.out.println("D time: " + time.getDeltaTime() + "total t" + time.getTime());
 	}
 
 	@Override
