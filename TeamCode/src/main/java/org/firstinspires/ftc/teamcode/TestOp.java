@@ -8,7 +8,7 @@ import java.util.List;
 import FTCEngine.Core.Behavior;
 import FTCEngine.Core.Main;
 
-//@TeleOp(name = "TestEngine")
+@TeleOp(name = "TestEngine")
 public class TestOp extends Main
 {
 	@Override

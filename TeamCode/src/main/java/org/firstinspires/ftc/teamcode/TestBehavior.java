@@ -20,7 +20,6 @@ public class TestBehavior extends Behavior
 		super.awake(hardwareMap);
 
 		telemetry.addData("AWAKE!", "YAYAY");
-		System.out.println("AWAKE!");
 	}
 
 	@Override
@@ -29,10 +28,6 @@ public class TestBehavior extends Behavior
 		super.start();
 
 		telemetry.addData("START!", "YEAH");
-		telemetry.addData("oh", opMode.getBehavior(OhDrive.class));
-
-		System.out.println("START!");
-		System.out.println(opMode.getBehavior(OhDrive.class));
 	}
 
 	@Override
@@ -41,9 +36,8 @@ public class TestBehavior extends Behavior
 		super.update();
 
 		telemetry.addData("DELTA TIME!", time.getDeltaTime());
+		telemetry.addData("FPS!", 1f / time.getDeltaTime());
 		telemetry.addData("TOTAL TIME!", time.getTime());
-
-		System.out.println("D time: " + time.getDeltaTime() + "total t" + time.getTime());
 	}
 
 	@Override
